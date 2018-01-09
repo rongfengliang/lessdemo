@@ -2,7 +2,7 @@
 const css = 0
 const html = require('bel')
  
-const prefix = ((null || true) && "_78278a80")
+const prefix = ((null || true) && "_f45e7eb0")
  
 const tree = html`
   <section class=${prefix}>

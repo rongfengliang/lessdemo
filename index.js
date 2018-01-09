@@ -2,10 +2,14 @@ const css = require('sheetify')
 const html = require('bel')
  
 const prefix = css`
-   h1 {
-    text-align: center;
-    color:red;
-  }
+:host {
+  background-color: blue;
+}
+
+:host > h1 {
+  text-decoration: underline;
+  color:red;
+}
 `
  
 const tree = html`
