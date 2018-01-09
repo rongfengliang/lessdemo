@@ -8,11 +8,13 @@
     "browserify": "^15.0.0",
     "css-extract": "^1.2.0",
     "less": "^2.7.3",
-    "sheetify": "^6.2.0"
+    "sheetify": "^6.2.0",
+    "uglifyify": "^4.0.5"
   },
   "scripts": {
-    "build": "lessc css/app.less app.css",
+    "build-less": "lessc css/app.less app.css",
     "start": "live-server",
-    "app": "browserify -t [ sheetify ] -p [ css-extract -o bundle.css ] index.js -o app.js "
+    "build:app":"node build.js",
+    "app": "browserify -t [ sheetify uglifyify  -x .js -x .coffee] -p [ css-extract -o bundle.css ] index.js -o app.js "
   }
 }
