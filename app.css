@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-login {
+  color: red;
+  font-size: 18px;
+  margin: 0 auto;
+  height: 10px;
+  width: 800px;
+  display: flex;
+}
+.main-login :nth-child(3) {
+  border: 20px;
+  background-color: blue;
+  color: antiquewhite;
+}
+.main-login .main-items {
+  padding: 20px;
+  margin: 20px;
+  border: 3px;
+  height: 30px;
+}
+.main-content {
+  background-color: cadetblue;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 100px;
+  height: 500px;
+  width: 800px;
+}

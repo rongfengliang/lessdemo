@@ -1,0 +1,18 @@
+{
+  "name": "lessrong",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bel": "^5.1.5",
+    "browserify": "^15.0.0",
+    "css-extract": "^1.2.0",
+    "less": "^2.7.3",
+    "sheetify": "^6.2.0"
+  },
+  "scripts": {
+    "build": "lessc css/app.less app.css",
+    "start": "live-server",
+    "app": "browserify -t [ sheetify ] -p [ css-extract -o bundle.css ] index.js -o app.js "
+  }
+}
